@@ -1,0 +1,521 @@
+/* Emcabezado */ 
+/* Barra Superior */
+.barra{
+    display: flex;
+    background-color: #55a389;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 30px;
+}
+.NombreMin {
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.NombreMin:hover{
+    color: gray;
+}
+.centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+}
+.whatsapp, .facebook, .instagram, .youtube, .pinterest {
+    width: 20px;
+    cursor: pointer;  
+}
+.b1,.b2,.b3,.b4,.b5{
+    height: 26px;
+    background: transparent;
+    border: transparent;
+}
+.whatsapp:hover,.facebook:hover,.instagram:hover,.pinterest:hover,.youtube:hover{
+    transform:scale(1.2);
+}
+/* Logo, Nombre de la Pagina y eslogan */
+.principal{
+    display:flex; 
+    background: rgb(18, 18, 18)  
+}           
+.LOGO{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+    margin-left: 150px; 
+    margin-right: 20px;   
+    cursor:grabbing;
+}
+.LOGO:hover{
+    transform:scale(1.1);
+}
+.nombre {
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    cursor:grabbing;
+    margin-top: 38px;
+    margin-right: 30px;
+}
+@keyframes cambioColor {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
+}
+.nombre {
+    animation: cambioColor 3s infinite;
+}
+.eslogan{
+    color: #7232f2;
+    font-size: 15px;
+    font-family: cursive;
+    cursor:grabbing;
+    text-align: center;
+    margin-top: -40px;
+    margin-right: 30px;
+}
+/* Menu de Navegacion */
+.navegacion{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color:#333; 
+    justify-content: center;
+}
+.navegacion a:link {
+    color: white; 
+    text-decoration: none; 
+}
+.navegacion a:visited {
+    color: blueviolet;
+    text-decoration: none;
+}
+.navegacion a:hover {
+    color: gray; 
+    text-decoration: underline;
+}
+.navegacion a:active {
+    color: darkgray;
+    text-decoration: underline;
+}
+nav ul li {
+    display: inline; 
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+nav ul li :hover {
+    color: black;
+}
+/* Cuerpo de la Pagina */
+body{
+    margin: 0;
+    
+}
+section {
+    background: rgb(18, 18, 18);  
+    padding: 50px;
+}
+/* Seccion de Inicio */
+/* Titulos en General */
+.MOC{
+    font-size: 40px;
+    line-height: 40px;
+    padding: 30px;
+    margin-left: 50px;
+    color: white;
+    font-family: cursive;
+    cursor:grabbing;
+}
+.MOC:hover{
+    color: gray;
+}
+h2{
+    color:#7232f2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.item {
+    min-width: 100%;
+}
+
+.carrusel img {
+    width: 100%;
+    display: block;
+}
+
+.anterior, .siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
+/* Seccion de Modelos */
+.produc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.mod.tarjeta {
+    position: relative;
+    width: 350px;
+    height: 500px; 
+    background-color: transparent;
+}
+.model {
+    width: 100%;
+    height: auto;
+}
+.model2 {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.6s;  
+    opacity: 0.2;
+    z-index: 1;
+}
+.tarjeta {
+    perspective: 1000px;
+    cursor: pointer;
+}
+.frente, .detras {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    top: 0; 
+    left: 0; 
+}
+.frente {
+    transform: rotateY(0deg);
+    
+}
+.detras {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    margin-top: -35px;
+}
+.cc{
+    width: 100px;
+}
+.olo{
+    color: white;
+    font-size: 30px;
+    margin-top: 31px;
+}
+.tod{
+    display: flex;
+}
+.col {
+    color: white; 
+    position: absolute;
+    margin-top: -30px;
+
+}
+.btns {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10; 
+    left: 185px;
+}
+.tarjeta.active .frente {
+    transform: rotateY(-180deg);
+}
+.tarjeta.active .detras {
+    transform: rotateY(0deg);
+    
+}
+
+/* Seccion de Crea tu Diseño */
+
+.colums{
+    display: flex;
+    gap: 150px;
+}
+.colums1, .colums2, .colums3{
+    display: block;
+    justify-content: center;
+}
+.subir, .limpiar, .enviar, .ad, .at, .selec{
+    font-size: 14px;
+    cursor: pointer;
+    border: solid #7232f2;
+    color: #7232f2;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 90px;
+    height: 30px;
+}
+.subir:active, .limpiar:active, .enviar:active, .ad:active, .at:active, .selec:active {
+    color: white;
+    border-color: white;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.botones button {
+    transition: transform 0.3s ease, border 0.3s ease;
+    transform-origin: center;
+}
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+    border: none;
+    border-radius: 20px;
+    height: 28px;
+    width: 28px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin: 4px;  
+}
+.btn1{
+    background-color: black;
+}
+
+.btn2{
+    background-color: white;
+}
+
+.btn3{
+    background-color: #494949;
+}
+
+.btn4{
+    background-color: #102438;
+}
+
+.btn5{
+    background-color: #041404;
+}
+
+.btn6{
+    background-color: #240404 ;
+}
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover {
+    transform: scale(1.2);
+    border: double #7232f2;
+    z-index: 1; 
+}
+.ad, .at {
+    position: relative;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.botimg {
+    margin-right: 60px;
+    margin-left: -60px;
+}
+.camisa-e {
+    width: 150%; 
+    transition: transform 0.3s ease;
+}
+.camisa-e:hover {
+    transform: scale(1.1);
+}
+.camisa-e1 {
+    width: 150%;
+    height: 500%; 
+    transition: transform 0.3s ease;
+}
+.camisa-e1:hover {
+    transform: scale(1.1);
+}
+.button-text {
+    color: #7232f2;
+    position: absolute; 
+    left: 75%;
+    top: 210%;
+    transform: translateX(-50%);
+    font-size: 16px; 
+}
+.button-text:active {
+    color: white;
+}
+
+/* Crea html 1 */
+
+.design-area, .design-area2{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+.design-area-active {
+    display: block;
+}
+.design-area-none {
+    display: none;
+}
+.box {
+    position: absolute;
+    top: 23%; 
+    left: 25%;      
+    width: 50%;  
+    height: 60%; 
+    border: 2px dashed transparent; 
+    transition: border-color 0.2s ease;
+    overflow: hidden;
+}
+.design-area:hover .box{
+    border-color: #fff;
+}
+.preview {
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    top: 23%;    
+    left: 25%;   
+    width: 40%; 
+    height: 30%; 
+    transform: none; 
+}
+.preview img { 
+    width: auto; 
+    height: auto;
+}
+.camisa {
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+}
+.vista {
+    max-width: 125%;
+    max-height: 199%;
+    color: white;
+    border-color: transparent;
+}
+.vista:hover {
+    position: absolute;
+    border: dashed white;
+}
+
+/* Crea html 2 */
+
+.box2 {
+    position: absolute;
+    top: 48.5%;
+    left: 50.5%;
+    width: 43%;
+    height: 48%;
+    transform: translate(-50%, -50%);
+    border: 2px dashed transparent;
+    transition: border-color 0.2s ease;
+    overflow: hidden;
+}
+.design-area2:hover .box2, .boxx2 {
+    border-color: #fff;
+}
+.preview2 {
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    top: 24%;    
+    left: 28.5%;   
+    width: 20%; 
+    height: 30%; 
+    transform: none; 
+}
+.preview2 img { 
+    width: auto; 
+    height: auto;
+}
+.camisa2 {
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+}
+.vista2 {
+    max-width: 212%;
+    max-height: 160%;
+    color: white;
+    border-color: transparent;
+}
+.vista2:hover {
+    border: dashed white;
+}
+/* Crea html 3 */
+
+.camisa3 {
+    width: 106%;
+    margin-left: -17px;
+}
+.camisa3 {
+    max-width: 106%;
+    max-height: 100%;
+    color: white;
+}
+
+/* Seccion de Soporte */
+
+.comment{
+    display: inline;
+    color: white;
+    text-align: center;
+    gap: 10px;
+}
+.sop{
+    flex-direction:column;
+    background-color: transparent;
+    border: double;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+input, textarea {
+    color: white; 
+}
+/* Pie de Pagina */
+footer{
+    background: rgb(18, 18, 18);  
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align :center;   
+}

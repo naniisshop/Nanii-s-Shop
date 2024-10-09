@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea</title>
+    <link rel="stylesheet" href="CSS/Proyecto.css">
+</head>
+<body>
+<header> 
+        <div class="barra">
+            <h1 class="NombreMin">Nanii's Shop</h1>
+            <div class="centrado">
+                <button class="b1"><a href="https://wa.me/50664871656"><img class="whatsapp" src="img/whatsapp.png" alt=""></a></button> 
+                <button class="b2"><a href="https://www.facebook.com/profile.php?id=100014509751675"><img class="facebook" src="img/facebook.png" alt=""></a></button> 
+                <button class="b3"><a href="https://www.instagram.com/iamazombiee_?igsh=MWxnNWY5YnlrZTN2OA=="><img class="instagram" src="img/instagram.png" alt=""></a></button> 
+                <button class="b4"><a href="https://pin.it/4Y1QGylS0"><img class="pinterest" src="img/pinterest.png" alt=""></a></button>
+                <button class="b5"><a href="https://www.youtube.com/@danieljesusbrenesdelgado5389"><img class="youtube" src="img/youtube.png" alt=""></a></button>
+            </div>
+        </div>
+        <div class="principal">
+             <img class="LOGO" src="img/LOGO.png" alt=""> 
+             <div>
+                <h1 class="nombre">NANII´S SHOP</h1>
+                <br>
+                <h2 class="eslogan">El Estilo para tu Personalidad</h2>
+            </div>
+        </div>
+        <div class="navegacion">
+            <nav>
+                <ul> 
+                    <li><a href="1-Inicio.html">Inicio</a></li>
+                    <li><a href="2-Modelos.html">Modelos</a></li>
+                    <li><a href="5-Soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
+<section class="sec" id="crea">   
+    <br><br>
+    <div class="colums">
+        <div class="colums1">
+            <br><br><br>
+            <button class="subir" id="uploadButton">Subir</button>
+            <button class="limpiar" id="clearImage">Limpiar</button>
+            <br><br>
+            <div class="tod"> <img src="img/Colores.png" class="cc" alt="" >
+            <h1 class="olo">olores</h1> </div>
+            <br>
+            <div class="botones">
+                <button class="btn1" data-imagen-front="img/negro adelante3.png" data-imagen-back="img/negro atras3.png"></button>
+                <button class="btn2" data-imagen-front="img/blanco adelante3.png" data-imagen-back="img/blanco atras3.png"></button>
+                <button class="btn3" data-imagen-front="img/gris adelante3.png" data-imagen-back="img/gris atras3.png"></button>
+                <button class="btn4" data-imagen-front="img/marino adelante3.png" data-imagen-back="img/marino atras3.png"></button>
+                <button class="btn5" data-imagen-front="img/musgo adelante3.png" data-imagen-back="img/musgo atras3.png"></button>
+                <button class="btn6" data-imagen-front="img/vino adelante3.png" data-imagen-back="img/vino atras3.png"></button>
+            </div>
+        </div>       
+        <div class="colums2" >
+            <div id="front-view" class="design-area-active">
+                <div class="design-area"> 
+                    <input type="file" id="uploadImage-front" style="display: none;">
+                    <div id="movableElement"></div> <div class="box"></div>
+                    <img class="camisa3" id="shirtImage" src="img/abrigo sin adelante.png" alt=""> 
+                    <div class="preview">
+                    <img class="vista" id="previewImg-front" src="" alt="Your design will appear here">
+                    </div>
+                </div>
+            </div> 
+            <div id="back-view" class="design-area-none">
+                <div class="design-area"> 
+                    <input type="file" id="uploadImage-back" style="display: none;">
+                    <div id="movableElement"></div> <div class="box"></div> 
+                    <img class="camisa3" src="img/abrigo sin atras.png" alt="">  
+                    <div class="preview">
+                    <img class="vista" id="previewImg-back" src="" alt="Your design will appear here">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="colums3">    
+            <div class="botimg">
+                    <br><br><br><br><br>
+                    <button class="ad" onclick="showFront()"> 
+                    <img class="camisa-e" id="shirtImage2" src="img/abrigo sin adelante.png" alt="">  
+                    <span class="button-text">Adelante</span>
+                    </button>
+                      <br>
+                    <button class="at" onclick="showBack()">
+                    <img class="camisa-e" id="shirtImage3" src="img/abrigo sin atras.png" alt="">
+                    <span class="button-text">Atras</span>
+                    </button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <br>
+    <p> &copy; 2024 Daniel Delgado. Todos los derechos reservados</p>
+    <br>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="JavaS/Diseno.js"> </script>
+<script src="JavaS/Colores.js"></script>
+</body>
+</html>
